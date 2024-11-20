@@ -76,7 +76,9 @@ Each note document in the notes collection represents a note created by a user. 
 **Request header**:
 
 **Content-Type: application/json**
+
 **Authorization: Bearer JWT Token**
+
 We can hit the loginUser endpoint and get this token or use client Firebase SDK
 
 **Response**:
@@ -94,7 +96,9 @@ We can hit the loginUser endpoint and get this token or use client Firebase SDK
 **Request header**:
 
 **Content-Type: application/json**
+
 **Authorization: Bearer JWT Token**
+
 We can hit the loginUser endpoint and get this token or use client Firebase SDK
 
 **Request body**:
@@ -133,7 +137,9 @@ We can hit the loginUser endpoint and get this token or use client Firebase SDK
 **Request header**:
 
 **Content-Type: application/json**
+
 **Authorization: Bearer JWT Token**
+
 We can hit the loginUser endpoint and get this token or use client Firebase SDK
 
 **Response**:
@@ -183,6 +189,7 @@ Use the token from loginUser to get the JWT Token
 **Endpoint**: `POST https://identitytoolkit.googleapis.com/v1/accounts:signInWithCustomToken?key=AIzaSyA83Wa7lZahFb2JrdsnZKm8V9rX3lH3daE`
 
 **Request header**:
+
 **Content-Type: application/json**
 
 **Request Body**:
