@@ -36,7 +36,9 @@ Each note document in the notes collection represents a note created by a user. 
 ### **API Endpoints**
 
 1\. **Create User**
+
 **Endpoint**: `POST https://newuser-zuqlkkqq5a-uc.a.run.app`
+
 **Request body**:
 
 ```json
@@ -51,7 +53,9 @@ Each note document in the notes collection represents a note created by a user. 
 ```
 
 2\. **Update User**
+
 **Endpoint**: `PUT https://newuser-zuqlkkqq5a-uc.a.run.app`
+
 **Request body**:
 
 ```json
@@ -66,8 +70,11 @@ Each note document in the notes collection represents a note created by a user. 
 ```
 
 3\. **Delete User**
+
 **Endpoint**: `DELETE https://deleteuser-zuqlkkqq5a-uc.a.run.app`
+
 **Request header**:
+
 **Content-Type: application/json**
 **Authorization: Bearer JWT Token**
 We can hit the loginUser endpoint and get this token or use client Firebase SDK
@@ -81,8 +88,11 @@ We can hit the loginUser endpoint and get this token or use client Firebase SDK
 ```
 
 4\. **Save Note**
+
 **Endpoint**: `POST https://savenotes-zuqlkkqq5a-uc.a.run.app`
+
 **Request header**:
+
 **Content-Type: application/json**
 **Authorization: Bearer JWT Token**
 We can hit the loginUser endpoint and get this token or use client Firebase SDK
@@ -117,8 +127,11 @@ We can hit the loginUser endpoint and get this token or use client Firebase SDK
 ```
 
 5\. **Get Notes**
+
 **Endpoint**: `GET https://getnotes-zuqlkkqq5a-uc.a.run.app`
+
 **Request header**:
+
 **Content-Type: application/json**
 **Authorization: Bearer JWT Token**
 We can hit the loginUser endpoint and get this token or use client Firebase SDK
@@ -142,6 +155,7 @@ We can hit the loginUser endpoint and get this token or use client Firebase SDK
 ```
 
 6\. **Login User**
+
 **Endpoint**: `POST https://loginuser-zuqlkkqq5a-uc.a.run.app`
 
 **Request Body**:
@@ -163,7 +177,9 @@ We can hit the loginUser endpoint and get this token or use client Firebase SDK
 ```
 
 7\. **Get JWT Token**
+
 Use the token from loginUser to get the JWT Token
+
 **Endpoint**: `POST https://identitytoolkit.googleapis.com/v1/accounts:signInWithCustomToken?key=AIzaSyA83Wa7lZahFb2JrdsnZKm8V9rX3lH3daE`
 
 **Request header**:
