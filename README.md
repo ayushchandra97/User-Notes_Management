@@ -54,7 +54,7 @@ Each note document in the notes collection represents a note created by a user. 
 
 2\. **Update User**
 
-**Endpoint**: `PUT https://newuser-zuqlkkqq5a-uc.a.run.app`
+**Endpoint**: `PUT https://updateuser-zuqlkkqq5a-uc.a.run.app`
 
 **Request body**:
 
