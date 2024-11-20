@@ -43,12 +43,11 @@ Each note document in the notes collection represents a note created by a user. 
 
 ```json
 {
-  "title": "Meeting Notes", // string, title of the note
-  "content": "Important discussion points from the meeting", // string, content of the note
-  "userId": "user-uid-12345", // string, userId of the note's owner (reference to the users collection)
-  "pinned": false, // boolean, indicates if the note is pinned
-  "reminder": "2024-01-01T12:00:00Z", // string, ISO formatted date (optional), reminder for the note
-  "createdAt": "2024-01-01T12:00:00Z" // string, ISO formatted date of note creation
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "password": "password123",
+  "gender": "Male",
+  "age": 25
 }
 ```
 
@@ -56,16 +55,23 @@ Each note document in the notes collection represents a note created by a user. 
 
 **Endpoint**: `PUT https://updateuser-zuqlkkqq5a-uc.a.run.app`
 
+**Request header**:
+
+**Content-Type: application/json**
+
+**Authorization: Bearer JWT Token**
+
+We can hit the loginUser endpoint and get this token or use client Firebase SDK
+
 **Request body**:
 
 ```json
 {
-  "title": "Meeting Notes", // string, title of the note
-  "content": "Important discussion points from the meeting", // string, content of the note
-  "userId": "user-uid-12345", // string, userId of the note's owner (reference to the users collection)
-  "pinned": false, // boolean, indicates if the note is pinned
-  "reminder": "2024-01-01T12:00:00Z", // string, ISO formatted date (optional), reminder for the note
-  "createdAt": "2024-01-01T12:00:00Z" // string, ISO formatted date of note creation
+  "name": "Jane Doe",
+  "email": "john.doe@example.com",
+  "password": "password123",
+  "gender": "Female",
+  "age": 25
 }
 ```
 
