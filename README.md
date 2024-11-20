@@ -51,6 +51,15 @@ Each note document in the notes collection represents a note created by a user. 
 }
 ```
 
+**Response**:
+
+```json
+{
+  "uid": "287skQhwyvRNy...",
+  "message": "User registered successfully"
+}
+```
+
 2\. **Update User**
 
 **Endpoint**: `PUT https://updateuser-zuqlkkqq5a-uc.a.run.app`
@@ -72,6 +81,17 @@ We can hit the loginUser endpoint and get this token or use client Firebase SDK
   "password": "password123",
   "gender": "Female",
   "age": 25
+}
+```
+
+**Response**:
+
+```json
+{
+  "message": "User updated successfully",
+  "updates": {
+    "name": "Updated Name"
+  }
 }
 ```
 
